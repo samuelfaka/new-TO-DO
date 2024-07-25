@@ -1,0 +1,24 @@
+All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+
+
+ <div class="input">
+              <input class="in1" type="radio">
+              <input class="in2" type="text" placeholder="Currently typing"> 
+            </div>
+
+
+            <div class="btn1">
+              <button onclick="clickme()" class="btn">click</button>
+            </div> 
+
+            <div class="box">
+              <ul class="ul">
+  
+              </ul>
+            </div>
