@@ -134,7 +134,7 @@
 .kop2{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 .h{
     font-weight: 700;
@@ -170,7 +170,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 250px;
+        gap: 190px;
     }
     .box {
         background-color: white;
@@ -185,7 +185,7 @@
         margin-top: 20px;
     }
     .user1{
-        width: 55vw;
+        width: 50vw;
         padding: 10px;
         color: darkgray;
         font-size: 15px;
@@ -194,7 +194,7 @@
     }
     .both{
         background-color: white;
-        width: 80vw;
+        width: 65vw;
         padding: 10px;
         border-radius: 6px;
     }
