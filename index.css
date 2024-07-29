@@ -4,21 +4,34 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.sec{
-    background-color: white;
-    height: 100vh;
-
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
-.main{
+:root {
+    --background-light: black;
+    --background-dark: black;
+    --btn-color: black;
+    --box-background: black;
+}
+.sec {
+    background-color: var(--background-light);
+    height: 100%;
+    overflow-y: auto;
+}
+.main {
     background: url(./images/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 55vh;
+    padding: 20px;
 }
-.p{
+.p {
     font-weight: 700;
     font-size: 40px;
-    color: white;
+    color: var(--background-light);
 }
 .p1{
     display: flex;
@@ -27,28 +40,28 @@
     padding: 100px;
     gap: 300px;
 }
-.both{
-    background-color: white;
+.both {
+    background-color: var(--background-light);
     width: 26vw;
     padding: 10px;
     border-radius: 6px;
 }
-.user1{
+.user1 {
     width: 24vw;
     padding: 10px;
-    color: darkgray;
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 700;
-    border: none
+    border: none;
 }
 .both1{
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.btn{
+.btn {
     border: none;
-    background-color: white;
+    background-color: var(--btn-color);
     color: darkgray;
     width: 5vw;
     padding: 15px;
@@ -159,19 +172,23 @@
 .k, .k1, .k2, .k3, .k4 {
     margin: 0;
 }
+.change1{
+    display: none;
+}
 @media screen and (max-width:950px) {
-    .main{
-        background: url(./images/bg-mobile-dark.jpg);
+    .main {
+        background: url(./images/bg-desktop-dark.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 70vh;
-        
+        height: 55vh;
+        padding: 20px;
     }
     .p1{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 190px;
+        height: 0;
     }
     .box {
         background-color: white;
@@ -188,22 +205,22 @@
     .user1{
         width: 50vw;
         padding: 10px;
-        color: darkgray;
+        color: black;
         font-size: 15px;
         font-weight: 700;
         border: none
     }
     .both{
-        background-color: white;
+        background-color: var(--background-light);
         width: 65vw;
         padding: 10px;
         border-radius: 6px;
     }
-    .btn{
+    .btn {
         border: none;
-        background-color: white;
+        background-color: var(--btn-color);
         color: darkgray;
-        width: 15vw;
+        width: 20vw;
         padding: 15px;
     }
     .h1{
@@ -213,5 +230,16 @@
         justify-content: flex-end;
         width: 95vw;
         padding: 20px;
+    }
+    :root {
+        --background-light: black;
+        --background-dark: black;
+        --btn-color: black;
+        --box-background: black;
+    }
+    .sec {
+        background-color: var(--background-light);
+        height: 100%;
+        overflow-y: auto;
     }
 }
